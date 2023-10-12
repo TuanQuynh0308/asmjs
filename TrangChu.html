@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="trangchu.css">
+  
+</head>
+
+<body>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- <div class="gioHang"> 
+          <table border="1" id="cart" style="width: 250px;height:300px;"></table>
+        </div> -->
+        <div class="d-flex flex-row text-center justify-content-center border w-100 align-items-center" id="">
+          <div class="border w-15">
+            Hinh anh o day
+            <img id="img5">
+          </div>
+
+          <div class="d-flex flex-column border w-30">
+           
+            <div id="name-products">
+              Mo Ta o day
+            </div>
+            <div id="price_products">
+              gia
+            </div>
+          </div>
+          <div class="d-flex border w-15" >
+            <input type="number" style="width: 50px;">
+          </div>
+          
+          <div class="d-flex border w-20">
+            <button >Xoas</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        <button type="button" class="btn btn-primary">Đặt hàng</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <div id="khung">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top  ">
+        <div class="container">
+            <a class="logo" href="index.html"><img src="Image/logonike2.png" style="width: 100px;"></a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="TrangChu.html">Trang Chủ</a>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="TinTuc.html">Tin tức</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="LienHe.html">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal">Giỏ Hàng</a>
+                </li>
+
+            </ul>
+            <!-- </div> -->
+        </div>
+    </nav>
+      <div class="banner">
+        <img id="anh" src="Image/banneraf1.png" alt="">
+        <div class="pre1">
+          <input type="button" value="<" onclick="pre()">
+        </div>
+        <div class="next1">
+          <input type="button" value=">" onclick="next()">
+        </div>
+      </div>
+      <script src="trangchu.js"></script>
+    </header>
+    <div class="service">
+      <div class="row">
+
+        <div class="service1 col-lg-3 col-sm-6 col-12">
+          <div class="border-custom" style="background: url(Image/nike3.jpg)  no-repeat ;">
+            <h3>MAM</h3>
+            <div class="small-text">
+              <p>Giày nam là một phần quan trọng của trang phục nam, có vai trò không chỉ trong việc bảo vệ...</p>
+            </div>
+            <div class="them">
+              <button><a href="#">Xem Thêm</a></button>
+            </div>
+            <div id="before"></div>
+          </div>
+
+        </div>
+        <div class="service1 col-lg-3 col-sm-6 col-12">
+          <div class="border-custom" style="background: url(Image/nike2.jpg);">
+            <h3>WOMAN</h3>
+            <div class="small-text">
+              <p>Giày nữ là một phần quan trọng của thời trang và phong cách cá nhân của phụ nữ...</p>
+            </div>
+            <div class="them">
+              <button><a href="#">Xem Thêm</a></button>
+            </div>
+            <div id="before"></div>
+          </div>
+
+        </div>
+        <div class="service1 col-lg-3 col-sm-6 col-12">
+          <div class="border-custom" style="background: url(Image/nike1.jpg)">
+            <h3>NEW</h3>
+            <div class="small-text">
+              <p>Giày thể thao tiếp tục là xu hướng phổ biến, không chỉ để thể thao mà còn cho việc đi lại...</p>
+            </div>
+            <div class="them">
+              <button><a href="#">Xem Thêm</a></button>
+            </div>
+            <div id="before"></div>
+          </div>
+
+        </div>
+        <div class="service1 col-lg-3 col-sm-6 col-12">
+          <div class="border-custom" style="background: url(Image/nike4.jpg)no-repeat;">
+            <h3>SALE</h3>
+            <div class="small-text">
+              <p>Xu hướng giày bền vững và làm từ các nguồn tài nguyên tái chế có thể ngày càng phổ biến hơn...</p>
+            </div>
+            <div class="them">
+              <button><a href="#">Xem Thêm</a></button>
+            </div>
+            <div id="before"></div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    
+    <div class="khuyenmai">
+      <div class="container">
+        <h2>KHUYẾN MẠI</h2>
+        <div class='row' id='products'>
+        </div>
+        <!-- <div class="list-km row">
+          <div class="box col-lg-4">
+            <div class="boxin">
+              <div class="image">
+                <img src="Image/nike4.jpg" style="height: 300px; width: 400px;">
+                <div class="sale">
+                  <div class="left">
+                    <span class="sale2">Sale 30%</span>
+                  </div>
+                  <div class="right">
+                    <p>NEW</p>
+                  </div>
+                </div>
+              </div>
+              <h3>Giày Nike Air Force 1 Travis Scott White Pk God Factory</h3>
+              
+              <div class="thongtin">
+                <div class="left">
+                  <i class="fa fa-user" aria-hidden="true"> Size: <input type="number" style="width: 35px;"></i><br />
+                  <i class="fa fa-calendar" aria-hidden="true">SL: <input type="number" style="width: 35px;"></i>
+                </div>
+                <div class="right">
+                  <p>Giá từ</p>
+                  <div class="red">
+                    <p>1200000đ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="xemthem">
+                <button>Thêm vào giỏ hàng</button>
+                <button>Mua ngay</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="box col-lg-4">
+            <div class="boxin">
+              <div class="image">
+                <img src="Image/nike1.jpg" style="height: 300px; width: 400px;">
+                <div class="sale">
+                  <div class="left">
+                    <span class="sale2">Sale 30%</span>
+                  </div>
+                  <div class="right">
+                    <p>NEW</p>
+                  </div>
+                </div>
+              </div>
+              <h3>AF1 Panda – Giày Nike Air Force 1 Panda hàng Siêu Cấp</h3>
+              
+
+              <div class="thongtin">
+                <div class="left">
+                  <i class="fa fa-user" aria-hidden="true"> Size: <input type="number" style="width: 35px;"></i><br />
+                  <i class="fa fa-calendar" aria-hidden="true"> SL: <input type="number" style="width: 35px;"></i>
+                </div>
+                <div class="right">
+                  <p>Giá từ</p>
+                  <div class="red">
+                    <p>4500000đ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="xemthem">
+                <button>Thêm vào giỏ hàng</button>
+                <button>Mua ngay</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="box col-lg-4">
+            <div class="boxin">
+              <div class="image">
+                <img src="Image/nike5.jpg">
+                <div class="sale">
+                  <div class="left">
+                    <span class="sale2">Sale 50%</span>
+                  </div>
+                  <div class="right">
+                    <p>NEW</p>
+                  </div>
+                </div>
+              </div>
+              <h3>NIKE AIR FORCE 1 07 WHITE BUTTERFLY PRINT (CUSTOM)</h3>
+              
+              <div class="thongtin">
+                <div class="left">
+                  <i class="fa fa-user" aria-hidden="true"> Size: <input type="number" style="width: 35px;"></i><br />
+                  <i class="fa fa-calendar" aria-hidden="true">SL:  <input type="number" style="width: 35px;"></i>
+                </div>
+                <div class="right">
+                  <p>Giá từ</p>
+                  <div class="red">
+                    <p>2600000đ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="xemthem">
+                <button>Thêm vào giỏ hàng</button>
+                <button>Mua ngay</button>
+              </div>
+            </div>
+
+          </div>
+        </div> -->
+        <h2>Giỏ hàng của bạn </h2>
+        <!-- <div class="giohang1">
+          <div class="gioHang"> 
+            <table border="1" id="cart" style="width: 250px;height:300px;"></table>
+          </div>
+          <h3>Tổng số tiền: $<span id="tong">0</span></h3>
+        </div> -->
+        
+                    
+      </div>
+    </div>
+    <div class="footer">
+      <div style="text-align:center; font-size:30px;"><a href='#' title="Back to top">&#710;</a></div>
+      <div class="row">
+        <div class=" col-lg-3 col-sm-6 col-12">
+          <div class="info">
+            <h6>Hỗ trợ</h6>
+            <hr />
+            <p>Hỗ trợ mọi thắc mắc.</p>
+            <i class="fa fa-phone" aria-hidden="true"> +1-202-555-0151</i><br />
+            <i class="fa fa-envelope-o" aria-hidden="true"> help@yourweb.com</i>
+          </div>
+        </div>
+        <div class=" col-lg-2 col-sm-6 col-12">
+          <div class="info">
+            <h6>Dịch vụ</h6>
+            <hr />
+            <p>Đổi trả</p>
+            <p>Đặt mẫu</p>
+          
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-6 col-12">
+          <div class="info">
+            <h6>Chưa nghĩ ra</h6>
+            <hr />
+            <p>Hà Nội</p>
+            <p>Tây Bắc</p>
+            <p>Nha Trang</p>
+            <p>Vũng Tàu</p>
+            <p>Hạ Long</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-6 col-12">
+          <div class="info">
+            <h6>Chưa nghĩ ra</h6>
+            <hr />
+            <p>Thái lan</p>
+            <p>Nhật Bản</p>
+            <p>Thổ Nhĩ Kì</p>
+            <p>Lào</p>
+            <p>Tây Ban Nha</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <div class="info">
+            <h6>Liên Hệ</h6>
+            <hr />
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/s0qyEwIjAS8?si=MBG-YBwChrZJlxuP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="icon-new">
+              <div class="icon col-2">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+              <div class="icon col-2">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+              <div class="icon col-2">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+
+              </div>
+              <div class="icon col-2">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+              <div class="icon col-2">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+    <script src="giohang.js"></script>  
+</body>
+
+</html>

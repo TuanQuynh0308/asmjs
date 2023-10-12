@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="tintuc.css">
+</head>
+
+<body>
+  <div id="khung">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top  ">
+        <div class="container">
+            <a class="logo" href="index.html"><img src="Image/logonike2.png" style="width: 100px;"></a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="TrangChu.html">Trang Chủ</a>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="TinTuc.html">Tin tức</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="LienHe.html">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="gioHang.html">Giỏ Hàng</a>
+                </li>
+
+            </ul>
+            <!-- </div> -->
+        </div>
+    </nav>
+      <div class="banner">
+        <img id="anh" src="Image/banneraf1.png" alt="">
+        <div class="pre1">
+          <input type="button" value="<" onclick="pre()">
+        </div>
+        <div class="next1">
+          <input type="button" value=">" onclick="next()">
+        </div>
+      </div>
+      <script>
+        var arr_img = ["Image/banneraf1.png", "Image/banner2.jpg", "Image/banner-burnstore.jpg"];
+        var image = document.getElementById("anh");
+    
+        index = 0;
+        function next() {
+          index++;
+          if (index > 2) {
+            index = 0;
+          }
+          console.log(index);
+          image.src = arr_img[index];
+        }
+        function pre() {
+    
+          index--;
+          if (index < 0) {
+            index = arr_img.length - 1;
+          }
+          console.log(index);
+          image.src = arr_img[index];
+        }
+      </script>
+    </header>
+  </div>
+  <!-- <div id="khung">
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="Image/logos.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="TrangChu.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="TinTuc.html">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="LienHe.html">Liên hệ</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="khungamthuc row">
+        <div class="boxamthuc col-lg-6 col-11">
+          <h3>Ẩm thực</h3>
+          <div class="boderat">
+            <div class="amthuc">
+              <div class="imageat">
+                <img src="Image/amthuc1.jpg">
+              </div>
+              <div class="text">
+                <a
+                  href="https://baosonla.org.vn/vi/bai-viet/the-travel-am-thuc-viet-nam-thuoc-top-ngon-nhat-the-gioi-51852">Phở
+                  là món ăn nổi tiếng nhất Hà Nội</a>
+                <p>Ở Hà Nội, phở là một món ăn đặc biệt của người Hà Nội không biết đã có từ bao giờ. Phở được dùng
+                  riêng như...</p>
+              </div>
+            </div>
+
+            <div class="amthuc">
+              <div class="imageat">
+                <img src="Image/amthuc3.jpg">
+              </div>
+              <div class="text">
+                <a
+                  href="https://baosonla.org.vn/vi/bai-viet/the-travel-am-thuc-viet-nam-thuoc-top-ngon-nhat-the-gioi-51852">Ẩm
+                  thực Mỹ rất phong phú, đa dạng</a>
+                <p>Độc giả của The Travel đánh giá ẩm thực của Mỹ đứng ở vị trí thứ nhất. Mỹ là một trong những...</p>
+              </div>
+            </div>
+            <div class="amthuc">
+              <div class="imageat">
+                <img src="Image/amthuc4.jpg">
+              </div>
+              <div class="text">
+                <a
+                  href="https://baosonla.org.vn/vi/bai-viet/the-travel-am-thuc-viet-nam-thuoc-top-ngon-nhat-the-gioi-51852">Món
+                  Sauerbraten nổi tiếng của Đức</a>
+                <p>Đứng thứ 2 trong danh sách này là ẩm thực của Đức. Bia không phải là thứ duy nhất khiến ẩm thực
+                  Đức...</p>
+              </div>
+            </div>
+            <div class="amthuc">
+              <div class="imageat">
+                <img src="Image/amthuc5.jpg">
+              </div>
+              <div class="text">
+                <a
+                  href="https://baosonla.org.vn/vi/bai-viet/the-travel-am-thuc-viet-nam-thuoc-top-ngon-nhat-the-gioi-51852">Ấn
+                  Độ có nền ẩm thực độc đáo</a>
+                <p>Xếp thứ 4 theo đánh giá của độc giả The Travel, ẩm thực Ấn Độ là sự kết hợp phong cách ẩm thực...</p>
+              </div>
+            </div>
+            <div class="amthuc">
+              <div class="imageat">
+                <img src="Image/amthuc2.jpg">
+              </div>
+              <div class="text">
+                <a
+                  href="https://baosonla.org.vn/vi/bai-viet/the-travel-am-thuc-viet-nam-thuoc-top-ngon-nhat-the-gioi-51852">Bánh
+                  mỳ Việt Nam được du khách nước ngoài đặc biệt yêu thích</a>
+                <p>Theo The Travel, là một quốc gia ven biển hải sản là một thực phẩm...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="boxcamnag col-lg-5 col-11">
+          <h3>Cẩm nang du lịch</h3>
+          <div class="bodercn">
+            <div class="camnag">
+              <div class="imagecn">
+                <img src="Image/cn1.jpg">
+              </div>
+              <div class="textcn">
+                <a href="https://hanoitourist.com.vn/perth-thanh-pho-yen-binh-cua-australia-kn24523.html">Perth - thành
+                  phố yên bình của Australia</a>
+                <p>Biểu tượng của Perth chính là bến cảng Elizabeth Quay - trung tâm thành phố...</p>
+              </div>
+            </div>
+            <div class="camnag">
+              <div class="imagecn">
+                <img src="Image/cn2.jpg">
+              </div>
+              <div class="textcn">
+                <a
+                  href="https://hanoitourist.com.vn/kinh-nghiem-du-lich-ben-tre-danh-cho-nhung-ban-thich-kham-pha-kn797.html">Kinh
+                  nghiệm du lịch Bến Tre</a>
+                <p>Bến Tre luôn là một địa điểm du lịch lý tưởng đối với những người thích khám phá</p>
+              </div>
+            </div>
+            <div class="camnag">
+              <div class="imagecn">
+                <img src="Image/cn3.jpg">
+              </div>
+              <div class="textcn">
+                <a
+                  href="https://hanoitourist.com.vn/dieu-it-biet-ve-dat-nuoc-lanh-nhu-sao-hoa-vao-mua-dong-kn24613.html">Điều
+                  ít biết về đất nước 'lạnh như sao Hỏa' vào mùa đông</a>
+                <p>Canada là quốc gia nằm ở cực bắc của lục địa Bắc Mỹ, có diện tích lớn thứ 2 trên thế giới...</p>
+              </div>
+            </div>
+            <div class="camnag">
+              <div class="imagecn">
+                <img src="Image/cn4.png">
+              </div>
+              <div class="textcn">
+                <a href="https://hanoitourist.com.vn/noi-co-the-thay-4-bang-cua-my-cung-luc-kn24501.html">Nơi có thể
+                  thấy 4 bang của Mỹ cùng lúc</a>
+                <p>Chỉ cần đứng ở Four Corners, du khách có thể cùng lúc nhìn thấy 4 bang Colorado, New Mexico, Utah và
+                  Arizona....</p>
+              </div>
+            </div>
+            <div class="camnag">
+              <div class="imagecn">
+                <img src="Image/cn5.jpg">
+              </div>
+              <div class="textcn">
+                <a
+                  href="https://hanoitourist.com.vn/thoa-man-dam-me-song-ao-voi-top-6-quan-cafe-dep-nhat-da-lat-kn808.html">Thỏa
+                  mãn đam mê sống ảo với top 6 quán cafe đẹp nhất Đà Lạt</a>
+                <p>Đến du lịch Đà Lạt, bạn sẽ có cơ hội được tham quan những thắng cảnh thiên nhiên nổi tiếng...</p>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="anhnoibat">
+      <h3>Hình ảnh nổi bật</h3>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Image/anhkm3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Image/anhkm2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Image/amthuc3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="khuyenmai">
+      <div class="container">
+        <h2>TIN TỨC</h2>
+        <div class="list-km row">
+          <div class="box col-lg-4 col-md-12 col-12">
+            <div class="boxin">
+              <div class="image">
+                <img src="Image/tintuc1.jpg">
+
+              </div>
+              <div class="dau">
+                <a href="https://vnexpress.net/hoi-an-lui-viec-thu-phi-toan-bo-du-khach-4591078.html">Hội An lùi việc
+                  thu phí toàn bộ...</a>
+              </div>
+
+              <div class="textnho">
+                <p>Ngày 8/4, ông Trần Ánh, Bí thư Thành ủy Hội An, cho biết đã đề nghị UBND thành phố chưa thực hiện
+                  phương án...</p>
+              </div>
+              <div class="xemthem">
+                <button type="button"><a
+                    href="https://vnexpress.net/hoi-an-lui-viec-thu-phi-toan-bo-du-khach-4591078.html">Xem
+                    thêm</a></button>
+              </div>
+            </div>
+
+          </div>
+          <div class="box col-lg-4 col-md-6 col-12">
+            <div class="boxin">
+              <div class="image">
+                <img src="Image/tintuc3.png">
+
+              </div>
+              <div class="dau">
+                <a href="https://vnexpress.net/khu-du-lich-nui-ba-den-giam-40-gia-ve-cap-treo-4590708.html">Khu Bà Đen giảm 40%</a>
+              </div>
+
+              <div class="textnho">
+                <p>Du khách đến chiêm bái, thưởng thức vẻ đẹp núi Bà Đen về đêm sẽ được giảm 40% giá vé cáp treo, chỉ
+                  còn từ 100.000 đồng, ưu đãi áp dụng từ 1/4 đến 31/12.</p>
+              </div>
+              <div class="xemthem">
+                <button type="button"><a
+                    href="https://vnexpress.net/khu-du-lich-nui-ba-den-giam-40-gia-ve-cap-treo-4590708.html">Xem
+                    thêm</a></button>
+              </div>
+            </div>
+
+          </div>
+          <div class="box col-lg-4 col-md-6 col-12">
+            <div class="boxin">
+              <div class="image">
+                <img src="Image/tintuc2.jpg">
+
+              </div>
+              <div class="dau">
+                <a href="https://vnexpress.net/venice-barelona-no-luc-thu-phi-du-khach-4590271.html">Venice, Barelonathu phí du khách</a>
+              </div>
+
+              <div class="textnho">
+                <p>Venice dự kiến thu phí khách đến trong ngày nhằm giảm đông đúc và bảo tồn trong khi Barcelona thu phí
+                  khách đặt phòng để hạn chế khách...</p>
+              </div>
+              <div class="xemthem">
+                <button type="button"><a
+                    href="https://vnexpress.net/venice-barelona-no-luc-thu-phi-du-khach-4590271.html">Xem
+                    thêm</a></button>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class=" col-lg-3 col-sm-6 col-12">
+          <div class="info">
+            <h6>Hỗ trợ</h6>
+            <hr />
+            <p>Hỗ trợ mọi thắc mắc.</p>
+            <i class="fa fa-phone" aria-hidden="true"> +1-202-555-0151</i><br />
+            <i class="fa fa-envelope-o" aria-hidden="true"> help@yourweb.com</i>
+          </div>
+        </div>
+        <div class=" col-lg-2 col-sm-6 col-12">
+          <div class="info">
+            <h6>Dịch vụ</h6>
+            <hr />
+            <p>Khách sạn</p>
+            <p>Văn phòng cho thuê</p>
+            <p>Lữ hành</p>
+            <p>Vui chơi giải trí</p>
+            <p>Thương mại</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-6 col-12">
+          <div class="info">
+            <h6>Du lịch trong nước</h6>
+            <hr />
+            <p>Hà Nội</p>
+            <p>Tây Bắc</p>
+            <p>Nha Trang</p>
+            <p>Vũng Tàu</p>
+            <p>Hạ Long</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-6 col-12">
+          <div class="info">
+            <h6>Du lịch ngoài nước</h6>
+            <hr />
+            <p>Thái lan</p>
+            <p>Nhật Bản</p>
+            <p>Thổ Nhĩ Kì</p>
+            <p>Lào</p>
+            <p>Tây Ban Nha</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <div class="info">
+            <h6>Liên Hệ</h6>
+            <hr />
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/x_l52mF4dI8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="icon-new">
+              <div class="icon col-2">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+              <div class="icon col-2">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+              <div class="icon col-2">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+
+              </div>
+              <div class="icon col-2">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+              <div class="icon col-2">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script> -->
+</body>
+
+</html>

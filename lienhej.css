@@ -1,0 +1,202 @@
+#navbarSupportedContent ul li a:hover {
+    background-color: aqua;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: tahoma;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #92f7f7;
+    text-align: center;
+    opacity: 80%;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar li {
+    position: relative;
+    margin-right: 10px;
+    
+}
+
+.nav-item a {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px;
+    transition: all .42s;
+    text-decoration: none;
+
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    bottom: -2px;
+    left: 0;
+    transition: .42s;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.pre1{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+.next1{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.lienhe{
+    background-color: #96e4ec;
+    padding: 20px;
+    margin-top: 20px;
+}
+.formlienhe{
+    display: flex;
+    justify-content: space-between;
+}
+.form{
+    
+    width: 45%;
+}
+.group1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    border: none;
+    
+}
+.group1 .item{
+    width: 49%;
+}
+.group1 .item input{
+    width: 100%;
+    padding: 5px 15px;
+}
+.group2{
+    margin-bottom: 10px;
+    border: none;
+}
+.group2 input{
+    width: 100%;
+    padding: 5px 15px;
+}
+.group3{
+    border: none;
+}
+.group3 textarea{
+    width: 100%;
+    padding: 30px 15px;
+}
+.group1 input{
+    width: 49%;
+    padding: 5px 15px;
+}
+.submit input{
+    background-color: #fff;
+    border: 1px solid rgb(148, 185, 244);
+    padding: 5px 20px;
+}
+.submit input:hover{
+    background-color: #69bdf1;
+    color: white;
+}
+
+.footer{
+    margin: 20px;
+    padding: 20px;
+    
+}
+.info h6{
+    margin-top: 50px;
+}
+.info p{
+    color: gray;
+}
+.info form button{
+    width: 100%;
+    background-color: #4dc57f;
+}
+.icon-new{
+    
+    display: flex;
+}
+.icon{
+    display: flex;
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 3px;
+}
+.video iframe{
+    width: 100%;
+    max-height: 200px;
+}
+.map{
+    width: 48%;
+}
+.map iframe{
+    width: 100%;
+    max-height: 400px;
+}
+
+@media screen and (max-width: 960px) {
+    .video iframe{
+        max-height: 500px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .group1{
+        flex-direction: column;
+    }
+    .group1 input{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 450px){
+    .formlienhe{
+        flex-direction: column;
+    }
+    .form{
+        width: 100%;
+    }
+    .map{
+        margin-top: 20px;
+        width: 100%;
+    }
+}

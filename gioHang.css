@@ -1,0 +1,109 @@
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgb(180, 244, 244);
+}
+.cart h2{
+    margin-bottom: 20px;
+}
+.cart table{
+    width: 100%;
+}
+.cart table thread tr th:first-child{
+    text-align: left;
+}
+.cart table tbody tr{
+    border: 1px solid black;
+}
+.cart table tr td{
+    border-bottom: 1px solid #222121;
+    padding: 12px 0;
+}
+.cart table thead{
+    background-color: rgb(99, 99, 245);
+}
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+.cart table tbody tr td:last-child{
+    text-align: right;
+}
+.cart table tbody tr td input{
+    margin-left: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: tahoma;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color:#92f7f7;
+    text-align: center;
+    opacity: 80%;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar li {
+    position: relative;
+    margin-right: 10px;
+    
+}
+
+.nav-item a {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px;
+    transition: all .42s;
+    text-decoration: none;
+
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    bottom: -2px;
+    left: 0;
+    transition: .42s;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.pre1{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+.next1{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}

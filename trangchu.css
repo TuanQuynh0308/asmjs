@@ -1,0 +1,352 @@
+#navbarSupportedContent ul li a:hover {
+    background-color: aqua;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: tahoma;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #92f7f7;
+    text-align: center;
+    opacity: 80%;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar li {
+    position: relative;
+    margin-right: 10px;
+    
+}
+
+.nav-item a {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px;
+    transition: all .42s;
+    text-decoration: none;
+
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    bottom: -2px;
+    left: 0;
+    transition: .42s;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.pre1{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+.next1{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+.service{
+    background-color: rgb(157 216 233/40%);
+    border: 1px solid rgb(157 216 233/40%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.service1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border-custom {
+    display: flex;
+    min-height: 350px;
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+    flex-direction: column;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.border-custom:hover {
+    border-radius: unset;
+    flex-direction: column;
+ 
+ 
+
+}
+.border-custom h3{
+    position:relative;
+    margin-top: 40%;
+    font-size: 15pt;
+}
+.border-custom:hover h3 {
+    transition-duration: 0.5s;
+    padding-bottom: 2rem;
+    margin-top: 20%;
+}
+
+.border-custom .small-text :hover {
+    display: block;
+    transition-duration: 5s;
+}
+
+.small-text p {
+    text-align: center;
+}
+
+.border-custom:hover .small-text {
+    opacity: 1;
+    transition-duration: 0.5s;
+    padding-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.497);
+    border: none;
+    border-radius: 10%;
+}
+.border-custom:hover .them button {
+    opacity: 1;
+    transition-duration: 0.5s;
+    
+}
+
+.small-text {
+    opacity: 0;
+    transition-duration: 0.5s;
+    
+}
+.them button{
+    border: 1px solid white;
+    border-radius: 19px;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.them button a{
+    text-decoration: none;
+    color: black;
+}
+.border-customgt{
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(112 199 236 / 40%);
+    border: 1px solid rgb(112 199 236 / 40%);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.textgt h2{
+    color: #0055a5;
+}
+.textgt button{
+    border: 1px solid #0055a5;
+    border-radius: 19px;
+    transition-duration: 0.5s;
+    padding: 5px 24px;
+}
+.textgt button a{
+    text-decoration: none;
+    color: black;
+}
+.textgt button:hover{
+    background-color: #0055a5;
+    color: white;
+}
+.textgt{
+    flex-basis: 50%;
+}
+.imagegt{
+    flex-basis: 50%;
+}
+.imagegt img{
+    width: 100%;
+}
+.them button:hover{
+    background-color: #0055a5;
+    color: white;
+}
+.khuyenmai{
+    background-color: #b2d6fa;
+}
+.khuyenmai h2{
+    text-align: center;
+    color: rgb(67, 67, 157);
+    padding: 15px 0;
+    
+}
+.box{
+    border-radius: 5%;
+    overflow: hidden;
+    padding: 30px;
+}
+.boxin{
+    background-color: white;
+    border-radius: 5%;
+    overflow: hidden;
+}
+.boxin h3{
+    min-height: 50px;
+}
+.sale{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sale .left{
+    background-color: red;
+    color: white;
+    padding: 5px 35px 5px 10px;
+    clip-path: polygon(100% 0, 75% 50%, 100% 100%, 0 99%, 0% 50%, 0 0);
+}
+.sale .right{
+    color: white;
+    padding-bottom: 0;
+    font-weight: bold;
+}
+.sale .right p{
+    margin-bottom: 0;
+    margin-right: 3px;
+}
+
+.boxin .image {
+    width: 100%;
+    position: relative;
+    max-height: 230px;
+    overflow: hidden;
+    
+}
+.boxin .image img{
+    width: 100%;
+    height: 100%;
+}
+.boxin h3{
+    font-size: 13pt;
+    margin: 10px;
+}
+.boxin .textnho p{
+    font-size: 10pt;
+    margin: 10px;
+    min-height: 150px;
+}
+.thongtin{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.thongtin .right .red{
+    text-align: center;
+    margin-right: 20px;
+    color: red;
+    font-weight: 400;
+}
+.thongtin .right p{
+    margin: 0;
+}
+.boxin .xemthem{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.boxin .xemthem button{
+    padding: 5px 20px;
+    border: 1px solid rgb(139, 203, 243);
+    border-radius: 30px;
+}
+.boxin .xemthem button:hover{
+    background-color: rgb(139, 203, 243);
+    color: white;
+}
+.footer{
+    margin: 20px;
+    padding: 20px;
+    
+}
+.info h6{
+    margin-top: 50px;
+}
+.info p{
+    color: gray;
+}
+.info form button{
+    width: 100%;
+    background-color: #4dc57f;
+}
+.icon-new{
+    
+    display: flex;
+}
+.icon{
+    display: flex;
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 3px;
+}
+.video iframe{
+    width: 100%;
+    max-height: 200px;
+}
+@media screen and (max-width: 1100px) {
+    .border-customgt{
+        flex-direction: column;
+        border-radius: 19px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .video iframe{
+        max-height: 500px;
+    }
+}
+.gioHang1{
+    display: flex;
+    justify-content: space-between;
+}
+.gioHang{
+    width: 30%;
+}
+.gioHang table{
+    width: 100%;
+}
+
